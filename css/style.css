@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*inicio topo*/
+.topo{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+.topo nav{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+}
+.topo nav a{
+    padding: 32px 60px;
+    color: white;
+    text-decoration: none;/*Remvendo o underline*/
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+}
+.topo nav a:hover{
+    background-color: grey;
+    transition: 0.3s;
+}
+.topo nav ul{
+    width: 700px;
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*fim topo*/
+/*comeco banner*/
+.banner{
+    width: 100%;
+    height: 600px;
+    background-color: #e0dcdc
+}
+.content{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.alinhamento-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-banner h1{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 0px 10px 0px;
+}
+.texto-banner h2{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 0px 0px 10px 0px;
+}
+.texto-banner p{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.texto-banner{
+    text-align: center;
+}
+.botao-banner a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.botao-banner{
+    border: none;
+    background-color: #272727;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+.texto-banner button:hover{
+    background-color: grey;
+    transition: 0.3s;
+}
+/* fim banner*/
+/*sobre mim*/
+.sobre{
+    width: 100%;
+    height: 550px;
+}
+.texto-sobre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.alinhamento-sobre{
+    display: flex;
+}
+.alinhamento-sobre h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    margin-left: 520px;
+    width: 1000;
+}
+.alinhamento-sobre h3{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.alinhamento-sobre p{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+.botao-sobre{
+    width: 30%;
+    border: none;
+    background-color: #272727;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 40px;
+    border-radius: 7px;
+}
+.botao-sobre a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.texto-sobre button:hover{
+    background-color: grey;
+    transition: 0.3s;
+}
+/*habilidades*/
+.habilidades{
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 20px;
+    margin-top: 100px;
+}
+.habilidades li{
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+.habilidades li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #c4c4c4;
+    border-radius: 1000px;
+}
+.habilidades li:after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0px;
+    height: 15px;
+    background-color: #272727;
+    border-radius: 1000px;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+li.html:after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 65%;
+    }
+}
+li.design:after{
+    animation-name: design;
+}
+@keyframes design {
+    to{
+        width: 40%;
+    }
+}
+li.wp:after{
+    animation-name: wp;
+}
+@keyframes wp {
+    to{
+        width: 55%;
+    }
+}
+/*fim sobre*/
+/*meus trabalhos*/
+.trabalhos{
+    width: 100%;
+    height: 680px;
+    background-color: #e0dcdc
+}
+.alinhamento-trabalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alinhamento-trabalho img{
+    margin-top: 50px;
+    padding: 10px;
+}
+.trabalhos h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+}
+/*fim trabalhos*/
+.rodape{
+    width: 100%;
+    height: 150px;
+}
+.rodape nav{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+}
+.rodape nav a{
+    padding: 32px 60px;
+    color: black;
+    text-decoration: none;/*Remvendo o underline*/
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+.rodape nav ul{
+    width: 700px;
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.rodape nav a:hover{
+    background-color: grey;
+    transition: 0.3s;
+}
+.rodape p{
+    margin-left: 200px;
+}
